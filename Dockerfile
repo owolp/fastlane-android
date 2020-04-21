@@ -1,10 +1,8 @@
-FROM menny/android:1.13.6 
+FROM menny/android:latest
 
 # install OS packages
 RUN apt-get --quiet update --yes
 RUN apt-get --quiet install --yes ruby ruby-dev
-# We use this for xxd hex->binary
-RUN apt-get --quiet install --yes vim-common
 # install FastLane
 COPY Gemfile.lock .
 COPY Gemfile .
