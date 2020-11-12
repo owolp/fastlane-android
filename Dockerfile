@@ -11,7 +11,7 @@ RUN apt-get update && \
 RUN gem install fastlane
 
 # Installing bundle
-RUN gem install bundle
+RUN gem install bundler
 
 # Install deprendencies
 RUN bundle install
