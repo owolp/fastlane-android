@@ -1,4 +1,4 @@
-FROM runmymind/docker-android-sdk:latest
+FROM jangrewe/gitlab-ci-android:latest
 
 # Installing build tools
 RUN apt-get update && \
