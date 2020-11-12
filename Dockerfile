@@ -13,5 +13,8 @@ RUN gem install fastlane
 # Installing bundle
 RUN gem install bundle
 
+# Install deprendencies
+RUN bundle install
+
 # Work directory
 WORKDIR /app
